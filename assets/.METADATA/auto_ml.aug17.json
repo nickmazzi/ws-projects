@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "name": "aug 17",
+    "asset_type": "auto_ml",
+    "origin_country": "us",
+    "created_at": "2021-08-17T13:57:41Z",
+    "created": 1629208661847,
+    "asset_id": "auto_ml.aug17",
+    "asset_attributes": [
+      "auto_ml"
+    ]
+  },
+  "entity": {
+    "auto_ml": {
+      "wml": {
+        "service_instance_id": null,
+        "plan_version": 2
+      },
+      "status": "untrained",
+      "learning_type": "regression"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "auto_ml",
+      "name": "config",
+      "description": "config attachment for auto_ml asset auto_ml.aug17",
+      "object_key": "auto_ml/auto_ml.aug17/attachments/config_auto_ml.aug17",
+      "object_key_is_read_only": true,
+      "created_at": "2021-08-17T13:57:42Z",
+      "id": "0515b29c-73f9-401a-ba6f-466d67f29fee",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    },
+    {
+      "asset_type": "auto_ml",
+      "name": "referenced",
+      "description": "referenced attachment for auto_ml asset auto_ml.aug17",
+      "object_key": "auto_ml/auto_ml.aug17/attachments/referenced_auto_ml.aug17",
+      "object_key_is_read_only": true,
+      "created_at": "2021-08-17T13:57:43Z",
+      "id": "64134be9-f648-4f92-bec3-0f290959bb78",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}
