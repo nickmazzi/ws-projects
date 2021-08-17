@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "name": "aug 17 data asset",
+    "asset_type": "auto_ml",
+    "origin_country": "us",
+    "created_at": "2021-08-17T19:19:18Z",
+    "created": 1629227958224,
+    "asset_id": "auto_ml.aug17new",
+    "asset_attributes": [
+      "auto_ml"
+    ]
+  },
+  "entity": {
+    "auto_ml": {
+      "wml": {
+        "service_instance_id": null,
+        "plan_version": 2,
+        "pipeline": {
+          "entity": {
+            "document": {
+              "doc_type": "pipeline",
+              "pipelines": [
+                {
+                  "id": "autoai",
+                  "nodes": [
+                    {
+                      "id": "automl",
+                      "op": "kube",
+                      "parameters": {
+                        "output_logs": true,
+                        "input_file_separator": ",",
+                        "stage_flag": true,
+                        "optimization": {
+                          "compute_pipeline_notebooks_flag": true,
+                          "daub_adaptive_subsampling_max_mem_usage": 9000000000,
+                          "holdout_param": 0.1,
+                          "label": "bone_length",
+                          "learning_type": "regression",
+                          "max_num_daub_ensembles": 2,
+                          "run_cognito_flag": true,
+                          "scorer_for_ranking": "neg_root_mean_squared_error",
+                          "text_columns": null
+                        },
+                        "n_parallel_data_connections": 15,
+                        "one_vs_all_file": true
+                      },
+                      "runtime_ref": "autoai",
+                      "type": "execution_node"
+                    }
+                  ],
+                  "runtime_ref": "hybrid"
+                }
+              ],
+              "primary_pipeline": "autoai",
+              "runtimes": [
+                {
+                  "app_data": {
+                    "wml_data": {
+                      "hardware_spec": {
+                        "id": "c076e82c-b2a7-4d20-9c0f-1f0c2fdf5a24",
+                        "name": "M"
+                      }
+                    }
+                  },
+                  "id": "autoai",
+                  "name": "auto_ai.kb"
+                }
+              ],
+              "version": "2.0"
+            }
+          },
+          "metadata": {
+            "created_at": "2021-08-17T19:41:54.255Z",
+            "id": "wml_pipeline.aug17dataasset",
+            "modified_at": "2021-08-17T19:41:54.265Z",
+            "name": "aug 17 data asset",
+            "owner": "1000330999",
+            "project_id": "dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1",
+            "tags": [
+              "dsx-project.dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1"
+            ]
+          },
+          "system": {
+            "warnings": []
+          }
+        },
+        "training_definition": {
+          "metadata": {
+            "created_at": "2021-08-17T19:41:54.701Z",
+            "guid": "465821fe-d02a-4cb3-90f4-31f1493d4a1d",
+            "id": "465821fe-d02a-4cb3-90f4-31f1493d4a1d",
+            "project_id": "dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1",
+            "tags": [
+              "dsx-project.dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1"
+            ]
+          },
+          "entity": {
+            "pipeline": {
+              "data_bindings": [
+                {
+                  "data_reference_name": "training_input_data",
+                  "node_id": "training"
+                }
+              ],
+              "id": "wml_pipeline.aug17dataasset",
+              "nodes_parameters": [
+                {
+                  "node_id": "training",
+                  "parameters": {}
+                }
+              ]
+            },
+            "project_id": "dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1",
+            "results_reference": {
+              "location": {
+                "path": "/projects/dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1/assets/auto_ml/auto_ml.aug17new/wml_data",
+                "notebooks_path": "/projects/dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1/assets/auto_ml/auto_ml.aug17new/wml_data/465821fe-d02a-4cb3-90f4-31f1493d4a1d/notebooks",
+                "training": "/projects/dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1/assets/auto_ml/auto_ml.aug17new/wml_data/465821fe-d02a-4cb3-90f4-31f1493d4a1d",
+                "training_status": "/projects/dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1/assets/auto_ml/auto_ml.aug17new/wml_data/465821fe-d02a-4cb3-90f4-31f1493d4a1d/training-status.json",
+                "assets_path": "/projects/dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1/assets/auto_ml/auto_ml.aug17new/wml_data/465821fe-d02a-4cb3-90f4-31f1493d4a1d/assets"
+              },
+              "type": "fs"
+            },
+            "tags": [
+              "dsx-project.dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1"
+            ],
+            "training_data_references": [
+              {
+                "connection": {},
+                "id": "ghosts_train.csv",
+                "location": {
+                  "href": "/v2/assets/data_asset.ghoststraincsv?project_id=dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1",
+                  "id": "data_asset.ghoststraincsv"
+                },
+                "type": "data_asset"
+              }
+            ]
+          }
+        }
+      },
+      "status": "failed",
+      "learning_type": "regression"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "auto_ml",
+      "name": "config",
+      "description": "config attachment for auto_ml asset auto_ml.aug17new",
+      "object_key": "auto_ml/auto_ml.aug17new/attachments/config_auto_ml.aug17new",
+      "object_key_is_read_only": true,
+      "created_at": "2021-08-17T19:19:19Z",
+      "id": "92291df0-d5d1-4c4d-9534-ac432da346d2",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    },
+    {
+      "asset_type": "auto_ml",
+      "name": "referenced",
+      "description": "referenced attachment for auto_ml asset auto_ml.aug17new",
+      "object_key": "auto_ml/auto_ml.aug17new/attachments/referenced_auto_ml.aug17new",
+      "object_key_is_read_only": true,
+      "created_at": "2021-08-17T19:19:20Z",
+      "id": "8b0bbe17-cdd5-4f1b-847b-8e324921a21f",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}

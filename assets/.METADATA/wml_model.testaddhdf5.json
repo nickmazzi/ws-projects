@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "name": "test add hdf5",
+    "tags": [],
+    "asset_type": "wml_model",
+    "origin_country": "us",
+    "created_at": "2021-08-17T20:06:32Z",
+    "created": 1629230792117,
+    "asset_id": "wml_model.testaddhdf5",
+    "asset_attributes": [
+      "wml_model"
+    ]
+  },
+  "entity": {
+    "wml_model": {
+      "ml_version": "4.0.2",
+      "tags": [],
+      "software_spec": {
+        "base_id": "ab9e1b80-f2ce-592c-a7d2-4f2344f77194"
+      },
+      "type": "keras_2.2.5",
+      "custom": {
+        "untrained": true
+      }
+    }
+  },
+  "attachments": [
+    {
+      "name": "native",
+      "asset_type": "wml_model",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2021-08-17T20:06:32Z",
+      "id": "d544c5db-ecba-4a60-95a8-42f1e9721cdc",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}
