@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "test model definition",
+    "asset_type": "wml_model_definition",
+    "origin_country": "us",
+    "rov": {
+      "mode": 0
+    },
+    "asset_category": "USER",
+    "created_at": "2021-08-18T14:53:30Z",
+    "created": 1629298410475,
+    "asset_id": "wml_model_definition.testmodeldefinition",
+    "asset_attributes": [
+      "wml_model_definition"
+    ]
+  },
+  "entity": {
+    "wml_model_definition": {
+      "name": "test model definition",
+      "version": "1.0",
+      "command": "nick test",
+      "platform": {
+        "name": "python",
+        "versions": [
+          "3.8"
+        ]
+      },
+      "project": {
+        "href": "/v2/projects/dfbe6857-aaf9-44ef-a8ed-3a0af0406fc1"
+      }
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "wml_model_definition",
+      "created_at": "2021-08-18T14:53:30Z",
+      "id": "abc8be24-eb0a-4b61-a7f1-f5224b1368f0",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}

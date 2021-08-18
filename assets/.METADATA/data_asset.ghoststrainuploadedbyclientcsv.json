@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "ghosts_train_uploaded_by_client.csv",
+    "description": "",
+    "asset_type": "data_asset",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2021-08-18T08:53:37Z",
+    "created": 1629276817245,
+    "asset_id": "data_asset.ghoststrainuploadedbyclientcsv",
+    "asset_attributes": [
+      "data_asset"
+    ]
+  },
+  "entity": {
+    "data_asset": {
+      "mime_type": "text/csv"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "data_asset",
+      "name": "ghosts_train.csv",
+      "mime": "text/csv",
+      "created_at": "2021-08-18T08:53:38Z",
+      "id": "892059ea-e166-4d1f-8a2e-75f9778fe995",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}

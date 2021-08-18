@@ -1,0 +1,44 @@
+{
+  "entity": {
+    "wml_experiment": {
+      "training_references": [
+        {
+          "model_definition": {
+            "hardware_spec": {
+              "base_id": "f327bdf7-5634-43d8-b1e3-445afeaf18b9",
+              "name": "V100",
+              "num_nodes": 1
+            },
+            "id": "wml_model_definition.testmodeldefinition",
+            "parameters": {
+              "description": "test model definition",
+              "name": "test model definition"
+            },
+            "software_spec": {
+              "base_id": "fe185c44-9a99-5425-986b-59bd1d2eda46",
+              "name": "tensorflow_2.4-py3.8"
+            }
+          }
+        }
+      ],
+      "model_definition_dependencies": [
+        "wml_model_definition.testmodeldefinition"
+      ],
+      "ml_version": "4.0.0"
+    }
+  },
+  "metadata": {
+    "asset_category": "USER",
+    "asset_type": "wml_experiment",
+    "description": "",
+    "name": "nick test",
+    "origin_country": "US",
+    "created_at": "2021-08-18T14:53:50Z",
+    "created": 1629298430723,
+    "asset_id": "wml_experiment.nicktest",
+    "asset_attributes": [
+      "wml_experiment"
+    ]
+  },
+  "attachments": []
+}

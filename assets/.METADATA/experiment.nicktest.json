@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "name": "nick test",
+    "description": "",
+    "asset_type": "experiment",
+    "origin_country": "us",
+    "created_at": "2021-08-18T14:53:50Z",
+    "created": 1629298430281,
+    "asset_id": "experiment.nicktest",
+    "asset_attributes": [
+      "experiment"
+    ]
+  },
+  "entity": {
+    "experiment": {
+      "status": "pending",
+      "configuration": {},
+      "wml": {
+        "service_instance_id": "",
+        "plan_version": 2
+      },
+      "experiment_guid": "wml_experiment.nicktest"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "experiment",
+      "name": "referenced",
+      "description": "referenced attachment for experiment asset experiment.nicktest",
+      "object_key": "experiment/experiment.nicktest/attachments/referenced_experiment.nicktest",
+      "object_key_is_read_only": true,
+      "created_at": "2021-08-18T14:53:52Z",
+      "id": "74f6b582-0499-4bcb-acbb-09507eaf0012",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}
