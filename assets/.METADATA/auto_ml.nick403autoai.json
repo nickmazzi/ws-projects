@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "name": "nick 403 autoai",
+    "asset_type": "auto_ml",
+    "origin_country": "us",
+    "tags": [],
+    "asset_category": "USER",
+    "created_at": "2021-10-12T15:39:45Z",
+    "created": 1634053185072,
+    "asset_id": "auto_ml.nick403autoai",
+    "asset_attributes": [
+      "auto_ml"
+    ]
+  },
+  "entity": {
+    "auto_ml": {
+      "wml": {
+        "service_instance_id": null,
+        "plan_version": 2,
+        "pipeline": {
+          "entity": {
+            "document": {
+              "doc_type": "pipeline",
+              "pipelines": [
+                {
+                  "id": "autoai",
+                  "nodes": [
+                    {
+                      "id": "automl",
+                      "op": "kube",
+                      "parameters": {
+                        "output_logs": true,
+                        "input_file_separator": ",",
+                        "stage_flag": true,
+                        "optimization": {
+                          "compute_pipeline_notebooks_flag": true,
+                          "daub_adaptive_subsampling_max_mem_usage": 9000000000,
+                          "holdout_param": 0.1,
+                          "label": "bone_length",
+                          "learning_type": "regression",
+                          "max_num_daub_ensembles": 2,
+                          "run_cognito_flag": true,
+                          "scorer_for_ranking": "neg_root_mean_squared_error",
+                          "text_columns": null
+                        },
+                        "n_parallel_data_connections": 15,
+                        "one_vs_all_file": true
+                      },
+                      "runtime_ref": "autoai",
+                      "type": "execution_node"
+                    }
+                  ],
+                  "runtime_ref": "hybrid"
+                }
+              ],
+              "primary_pipeline": "autoai",
+              "runtimes": [
+                {
+                  "app_data": {
+                    "wml_data": {
+                      "hardware_spec": {
+                        "id": "c076e82c-b2a7-4d20-9c0f-1f0c2fdf5a24",
+                        "name": "M"
+                      }
+                    }
+                  },
+                  "id": "autoai",
+                  "name": "auto_ai.kb"
+                }
+              ],
+              "version": "2.0"
+            }
+          },
+          "metadata": {
+            "created_at": "2021-10-12T15:40:04.657Z",
+            "id": "wml_pipeline.nick403autoai",
+            "modified_at": "2021-10-12T15:40:04.716Z",
+            "name": "nick 403 autoai",
+            "owner": "1000330999",
+            "project_id": "8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
+            "tags": [
+              "dsx-project.8d21bbd4-452d-4627-a1b2-40ee64bcd4ad"
+            ]
+          },
+          "system": {
+            "warnings": []
+          }
+        },
+        "training_definition": {
+          "metadata": {
+            "created_at": "2021-10-12T15:40:04.833Z",
+            "guid": "586c90e2-dad8-4931-9701-3433007630fb",
+            "id": "586c90e2-dad8-4931-9701-3433007630fb",
+            "project_id": "8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
+            "tags": [
+              "dsx-project.8d21bbd4-452d-4627-a1b2-40ee64bcd4ad"
+            ]
+          },
+          "entity": {
+            "pipeline": {
+              "data_bindings": [
+                {
+                  "data_reference_name": "training_input_data",
+                  "node_id": "training"
+                }
+              ],
+              "id": "wml_pipeline.nick403autoai",
+              "nodes_parameters": [
+                {
+                  "node_id": "training",
+                  "parameters": {}
+                }
+              ]
+            },
+            "project_id": "8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
+            "results_reference": {
+              "location": {
+                "path": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data",
+                "notebooks_path": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb/notebooks",
+                "training": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb",
+                "training_status": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb/training-status.json",
+                "assets_path": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb/assets"
+              },
+              "type": "fs"
+            },
+            "tags": [
+              "dsx-project.8d21bbd4-452d-4627-a1b2-40ee64bcd4ad"
+            ],
+            "training_data_references": [
+              {
+                "connection": {},
+                "id": "ghosts_train.csv",
+                "location": {
+                  "href": "/v2/assets/data_asset.ghoststraincsv?project_id=8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
+                  "id": "data_asset.ghoststraincsv"
+                },
+                "type": "data_asset"
+              }
+            ]
+          }
+        }
+      },
+      "status": "failed",
+      "learning_type": "regression"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "auto_ml",
+      "name": "config",
+      "description": "config attachment for auto_ml asset auto_ml.nick403autoai",
+      "object_key": "auto_ml/auto_ml.nick403autoai/attachments/config_auto_ml.nick403autoai",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-12T15:39:45Z",
+      "id": "088b798f-7e3b-4c89-922d-c550a837cc46",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    },
+    {
+      "asset_type": "auto_ml",
+      "name": "referenced",
+      "description": "referenced attachment for auto_ml asset auto_ml.nick403autoai",
+      "object_key": "auto_ml/auto_ml.nick403autoai/attachments/referenced_auto_ml.nick403autoai",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-12T15:39:45Z",
+      "id": "faa14373-9360-45a9-829f-b1083021a820",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}
