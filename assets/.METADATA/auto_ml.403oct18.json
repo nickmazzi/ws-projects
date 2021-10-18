@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "name": "nick 403 autoai",
+    "name": "403 oct 18",
     "asset_type": "auto_ml",
     "origin_country": "us",
     "tags": [],
     "asset_category": "USER",
-    "created_at": "2021-10-12T15:39:45Z",
-    "created": 1634053185072,
-    "asset_id": "auto_ml.nick403autoai",
+    "created_at": "2021-10-18T15:57:04Z",
+    "created": 1634572624033,
+    "asset_id": "auto_ml.403oct18",
     "asset_attributes": [
       "auto_ml"
     ]
@@ -34,6 +34,7 @@
                         "stage_flag": true,
                         "optimization": {
                           "compute_pipeline_notebooks_flag": true,
+                          "cv_num_folds": 3,
                           "daub_adaptive_subsampling_max_mem_usage": 9000000000,
                           "holdout_param": 0.1,
                           "label": "bone_length",
@@ -72,14 +73,14 @@
             }
           },
           "metadata": {
-            "created_at": "2021-10-12T15:40:04.657Z",
-            "id": "wml_pipeline.nick403autoai",
-            "modified_at": "2021-10-12T15:40:04.716Z",
-            "name": "nick 403 autoai",
+            "created_at": "2021-10-18T16:41:55.363Z",
+            "id": "wml_pipeline.403oct18",
+            "modified_at": "2021-10-18T16:41:55.381Z",
+            "name": "403 oct 18",
             "owner": "1000330999",
-            "project_id": "8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
+            "project_id": "1efeb7f3-e903-44d1-87af-845861e944d9",
             "tags": [
-              "dsx-project.8d21bbd4-452d-4627-a1b2-40ee64bcd4ad"
+              "dsx-project.1efeb7f3-e903-44d1-87af-845861e944d9"
             ]
           },
           "system": {
@@ -88,12 +89,12 @@
         },
         "training_definition": {
           "metadata": {
-            "created_at": "2021-10-12T15:40:04.833Z",
-            "guid": "586c90e2-dad8-4931-9701-3433007630fb",
-            "id": "586c90e2-dad8-4931-9701-3433007630fb",
-            "project_id": "8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
+            "created_at": "2021-10-18T16:41:55.962Z",
+            "guid": "08928b9f-d84e-46b3-afd5-e93035636b17",
+            "id": "08928b9f-d84e-46b3-afd5-e93035636b17",
+            "project_id": "1efeb7f3-e903-44d1-87af-845861e944d9",
             "tags": [
-              "dsx-project.8d21bbd4-452d-4627-a1b2-40ee64bcd4ad"
+              "dsx-project.1efeb7f3-e903-44d1-87af-845861e944d9"
             ]
           },
           "entity": {
@@ -104,7 +105,7 @@
                   "node_id": "training"
                 }
               ],
-              "id": "wml_pipeline.nick403autoai",
+              "id": "wml_pipeline.403oct18",
               "nodes_parameters": [
                 {
                   "node_id": "training",
@@ -112,27 +113,28 @@
                 }
               ]
             },
-            "project_id": "8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
+            "project_id": "1efeb7f3-e903-44d1-87af-845861e944d9",
             "results_reference": {
               "location": {
-                "path": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data",
-                "notebooks_path": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb/notebooks",
-                "training": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb",
-                "training_status": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb/training-status.json",
-                "assets_path": "/projects/8d21bbd4-452d-4627-a1b2-40ee64bcd4ad/assets/auto_ml/auto_ml.nick403autoai/wml_data/586c90e2-dad8-4931-9701-3433007630fb/assets"
+                "path": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data",
+                "notebooks_path": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data/08928b9f-d84e-46b3-afd5-e93035636b17/notebooks",
+                "training": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data/08928b9f-d84e-46b3-afd5-e93035636b17",
+                "training_status": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data/08928b9f-d84e-46b3-afd5-e93035636b17/training-status.json",
+                "assets_path": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data/08928b9f-d84e-46b3-afd5-e93035636b17/assets"
               },
               "type": "fs"
             },
             "tags": [
-              "dsx-project.8d21bbd4-452d-4627-a1b2-40ee64bcd4ad"
+              "dsx-project.1efeb7f3-e903-44d1-87af-845861e944d9"
             ],
             "training_data_references": [
               {
                 "connection": {},
                 "id": "ghosts_train.csv",
                 "location": {
-                  "href": "/v2/assets/data_asset.ghoststraincsv?project_id=8d21bbd4-452d-4627-a1b2-40ee64bcd4ad",
-                  "id": "data_asset.ghoststraincsv"
+                  "href": "/userfs/v2/assets/data_asset.ghoststraincsv?project_id=1efeb7f3-e903-44d1-87af-845861e944d9",
+                  "id": "data_asset.ghoststraincsv",
+                  "userfs": "true"
                 },
                 "type": "data_asset"
               }
@@ -140,7 +142,7 @@
           }
         }
       },
-      "status": "failed",
+      "status": "completed",
       "learning_type": "regression"
     }
   },
@@ -148,11 +150,11 @@
     {
       "asset_type": "auto_ml",
       "name": "config",
-      "description": "config attachment for auto_ml asset auto_ml.nick403autoai",
-      "object_key": "auto_ml/auto_ml.nick403autoai/attachments/config_auto_ml.nick403autoai",
+      "description": "config attachment for auto_ml asset auto_ml.403oct18",
+      "object_key": "auto_ml/auto_ml.403oct18/attachments/config_auto_ml.403oct18",
       "object_key_is_read_only": true,
-      "created_at": "2021-10-12T15:39:45Z",
-      "id": "088b798f-7e3b-4c89-922d-c550a837cc46",
+      "created_at": "2021-10-18T15:57:04Z",
+      "id": "4d980642-b1b5-483d-b28a-1fef2ebd4798",
       "is_managed": false,
       "is_referenced": true,
       "is_remote": false
@@ -160,11 +162,11 @@
     {
       "asset_type": "auto_ml",
       "name": "referenced",
-      "description": "referenced attachment for auto_ml asset auto_ml.nick403autoai",
-      "object_key": "auto_ml/auto_ml.nick403autoai/attachments/referenced_auto_ml.nick403autoai",
+      "description": "referenced attachment for auto_ml asset auto_ml.403oct18",
+      "object_key": "auto_ml/auto_ml.403oct18/attachments/referenced_auto_ml.403oct18",
       "object_key_is_read_only": true,
-      "created_at": "2021-10-12T15:39:45Z",
-      "id": "faa14373-9360-45a9-829f-b1083021a820",
+      "created_at": "2021-10-18T15:57:04Z",
+      "id": "b95c48da-7ffa-42b2-8a90-3d6a93ee1d80",
       "is_managed": false,
       "is_referenced": true,
       "is_remote": false

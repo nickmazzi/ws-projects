@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "name": "depthsmall_40_main.csv",
+    "asset_type": "data_asset",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2021-10-18T17:28:17Z",
+    "created": 1634578097399,
+    "asset_id": "data_asset.depthsmall40maincsv",
+    "asset_attributes": [
+      "data_asset"
+    ]
+  },
+  "entity": {
+    "data_asset": {
+      "dataset": false,
+      "mime_type": "text/csv"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "data_asset",
+      "name": "depthsmall_40_main.csv",
+      "mime": "text/csv",
+      "object_key": "data_asset/depthsmall_40_main.csv",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-18T17:28:18Z",
+      "id": "f2eaab5e-400b-4547-8a07-d5162ae746b8",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}

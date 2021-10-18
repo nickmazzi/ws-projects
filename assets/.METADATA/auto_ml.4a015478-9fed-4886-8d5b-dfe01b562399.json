@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "name": "obm",
+    "asset_type": "auto_ml",
+    "origin_country": "us",
+    "tags": [],
+    "asset_category": "USER",
+    "created_at": "2021-10-18T17:27:24Z",
+    "created": 1634578044834,
+    "asset_id": "auto_ml.4a015478-9fed-4886-8d5b-dfe01b562399",
+    "asset_attributes": [
+      "auto_ml"
+    ]
+  },
+  "entity": {
+    "auto_ml": {
+      "wml": {
+        "service_instance_id": "99999999-9999-9999-9999-999999999999",
+        "plan_version": 2
+      },
+      "status": "untrained",
+      "learning_type": "regression"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "auto_ml",
+      "name": "config",
+      "description": "config attachment for auto_ml asset auto_ml.4a015478-9fed-4886-8d5b-dfe01b562399",
+      "object_key": "auto_ml/auto_ml.4a015478-9fed-4886-8d5b-dfe01b562399/attachments/config_auto_ml.4a015478-9fed-4886-8d5b-dfe01b562399",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-18T17:27:25Z",
+      "id": "62fb1c64-a3df-4e52-a2c9-4b463f30d371",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    },
+    {
+      "asset_type": "auto_ml",
+      "name": "referenced",
+      "description": "referenced attachment for auto_ml asset auto_ml.4a015478-9fed-4886-8d5b-dfe01b562399",
+      "object_key": "auto_ml/auto_ml.4a015478-9fed-4886-8d5b-dfe01b562399/attachments/referenced_auto_ml.4a015478-9fed-4886-8d5b-dfe01b562399",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-18T17:27:26Z",
+      "id": "02b38b41-9805-4266-b8c9-b42961d83ae3",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}
