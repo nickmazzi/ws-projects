@@ -1,0 +1,171 @@
+{
+  "entity": {
+    "wml_model": {
+      "data_asset_dependencies": [
+        "data_asset.AirPassengerscsv"
+      ],
+      "hybrid_pipeline_software_specs": [
+        {
+          "base_id": "52c57136-80fa-572e-8728-a5e7cbb42cde",
+          "name": "autoai-ts_3.9-py3.8"
+        }
+      ],
+      "label_column": "",
+      "pipeline": {
+        "id": "wml_pipeline.timeseriesgit"
+      },
+      "metrics": [
+        {
+          "context": {
+            "intermediate_model": {
+              "composition_steps": [
+                "LocalizedFlatten"
+              ],
+              "duration": 16,
+              "location": {
+                "model": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/data/autoai-ts/after_final_pipelines_generation/P6/model.gzip",
+                "pipeline": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/data/autoai-ts/after_final_pipelines_generation/P6/pipeline.json",
+                "pipeline_model": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/data/autoai-ts/after_final_pipelines_generation/P6/pipeline-model.json"
+              },
+              "name": "P6",
+              "pipeline_nodes": [
+                "LocalizedFlatten",
+                "Ensembler"
+              ],
+              "process": "after_final_pipelines_generation",
+              "schema_location": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/data/autoai-ts/after_final_pipelines_generation/P6/schema.json"
+            },
+            "phase": "after_final_pipelines_generation",
+            "timeseries": {
+              "allocation": 1,
+              "allocation_rows": 144,
+              "daub_status_location": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/data/autoai-ts/after_final_pipelines_generation/P6/daub_status.json",
+              "estimator": "SmallTimeSeriesDataDAUBPipeline",
+              "gap_len": 0,
+              "id": "P6",
+              "lookback_window": 12,
+              "num_backtest": 4,
+              "phase": "after_final_pipelines_generation",
+              "prediction_horizon": 1,
+              "target_columns": [
+                2
+              ],
+              "timestamp_column": 1
+            }
+          },
+          "timestamp": "2021-10-19T17:39:26.000Z",
+          "ts_metrics": {}
+        }
+      ],
+      "ml_version": "4.0.12",
+      "type": "wml-hybrid_0.1",
+      "schemas": {
+        "input": [
+          {
+            "fields": [
+              {
+                "name": "value",
+                "type": "integer"
+              }
+            ],
+            "id": "auto_ai_ts_input_schema"
+          }
+        ],
+        "output": []
+      },
+      "content_location": {
+        "connection": {},
+        "contents": [
+          {
+            "content_format": "pipeline-node",
+            "file_name": "P6_autoai-ts.zip",
+            "location": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/assets/dabb7e86-457b-4743-bff3-a76d91611f93_P6_after_final_pipelines_generation/resources/wml_model/P6_autoai-ts.zip",
+            "pipeline_node_id": "autoai-ts"
+          },
+          {
+            "content_format": "native",
+            "file_name": "pipeline_model.json",
+            "location": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/assets/dabb7e86-457b-4743-bff3-a76d91611f93_P6_after_final_pipelines_generation/resources/wml_model/pipeline_model.json"
+          }
+        ],
+        "location": {
+          "path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data",
+          "notebooks_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/notebooks",
+          "training": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93",
+          "training_status": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/training-status.json",
+          "assets_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/assets"
+        },
+        "type": "fs"
+      },
+      "training_data_references": [
+        {
+          "connection": {},
+          "id": "AirPassengers.csv",
+          "location": {
+            "href": "/userfs/v2/assets/data_asset.AirPassengerscsv?project_id=2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "id": "data_asset.AirPassengerscsv",
+            "userfs": "true"
+          },
+          "schema": {
+            "fields": [
+              {
+                "name": "value",
+                "type": "integer"
+              }
+            ],
+            "id": "auto_ai_ts_input_schema"
+          },
+          "type": "data_asset"
+        }
+      ],
+      "software_spec": {
+        "base_id": "8c1a58c6-62b5-4dc4-987a-df751c2756b6",
+        "name": "hybrid_0.1"
+      },
+      "content_import_state": "completed"
+    }
+  },
+  "metadata": {
+    "name": "time series git - P6 Ensembler",
+    "tags": [],
+    "asset_type": "wml_model",
+    "asset_category": "USER",
+    "resource_key": "6198c973-c46b-447f-ad7d-1d594f3da080",
+    "origin_country": "US",
+    "created_at": "2021-10-19T18:13:14Z",
+    "created": 1634667194717,
+    "asset_id": "wml_model.timeseriesgitP6Ensembler",
+    "asset_attributes": [
+      "wml_model"
+    ]
+  },
+  "attachments": [
+    {
+      "asset_type": "wml_model",
+      "name": "P6_autoai-ts.zip",
+      "user_data": {
+        "content_format": "pipeline-node",
+        "pipeline_node_id": "autoai-ts"
+      },
+      "created_at": "2021-10-19T18:13:14Z",
+      "id": "f3dd79d2-53e7-494a-8680-a3a4b750d4c4",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    },
+    {
+      "asset_type": "wml_model",
+      "name": "pipeline_model.json",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2021-10-19T18:13:15Z",
+      "id": "1cc19a04-f1e1-4adb-bc63-cbe33f776c8e",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}

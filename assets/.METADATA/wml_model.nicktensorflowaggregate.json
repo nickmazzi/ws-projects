@@ -1,0 +1,61 @@
+{
+  "entity": {
+    "wml_model": {
+      "content_location": {
+        "connection": {},
+        "contents": [
+          {
+            "content_format": "native",
+            "file_name": "e6dff0eb-d1c6-4c9b-8e42-6e435715624f.zip",
+            "location": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning/e6dff0eb-d1c6-4c9b-8e42-6e435715624f/assets/e6dff0eb-d1c6-4c9b-8e42-6e435715624f/resources/wml_model/e6dff0eb-d1c6-4c9b-8e42-6e435715624f.zip"
+          }
+        ],
+        "location": {
+          "path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning",
+          "model": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning/e6dff0eb-d1c6-4c9b-8e42-6e435715624f/data/model",
+          "notebooks_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning/e6dff0eb-d1c6-4c9b-8e42-6e435715624f/notebooks",
+          "training": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning/e6dff0eb-d1c6-4c9b-8e42-6e435715624f",
+          "training_status": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning/e6dff0eb-d1c6-4c9b-8e42-6e435715624f/training-status.json",
+          "logs": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning/e6dff0eb-d1c6-4c9b-8e42-6e435715624f/logs",
+          "assets_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/federated_learning/e6dff0eb-d1c6-4c9b-8e42-6e435715624f/assets"
+        },
+        "type": "fs"
+      },
+      "ml_version": "4.0.12",
+      "type": "tensorflow_2.4",
+      "software_spec": {
+        "base_id": "ab9e1b80-f2ce-592c-a7d2-4f2344f77194",
+        "name": "default_py3.8"
+      },
+      "content_import_state": "completed"
+    }
+  },
+  "metadata": {
+    "name": "nick tensorflow_aggregate",
+    "asset_type": "wml_model",
+    "asset_category": "USER",
+    "resource_key": "e3ee777c-cf7c-403e-a093-bc282c711242",
+    "origin_country": "US",
+    "created_at": "2021-10-19T18:12:00Z",
+    "created": 1634667120049,
+    "asset_id": "wml_model.nicktensorflowaggregate",
+    "asset_attributes": [
+      "wml_model"
+    ]
+  },
+  "attachments": [
+    {
+      "asset_type": "wml_model",
+      "name": "e6dff0eb-d1c6-4c9b-8e42-6e435715624f.zip",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2021-10-19T18:12:00Z",
+      "id": "5553cc81-fcf5-402f-b3c7-7f6387fba017",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}
