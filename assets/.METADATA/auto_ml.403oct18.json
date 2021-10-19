@@ -1,13 +1,23 @@
 {
   "metadata": {
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
     "name": "403 oct 18",
+=======
+    "name": "kagglebot git",
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
     "asset_type": "auto_ml",
     "origin_country": "us",
     "tags": [],
     "asset_category": "USER",
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
     "created_at": "2021-10-18T15:57:04Z",
     "created": 1634572624033,
     "asset_id": "auto_ml.403oct18",
+=======
+    "created_at": "2021-10-19T17:44:04Z",
+    "created": 1634665444369,
+    "asset_id": "auto_ml.kagglebotgit",
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
     "asset_attributes": [
       "auto_ml"
     ]
@@ -15,7 +25,7 @@
   "entity": {
     "auto_ml": {
       "wml": {
-        "service_instance_id": null,
+        "service_instance_id": "99999999-9999-9999-9999-999999999999",
         "plan_version": 2,
         "pipeline": {
           "entity": {
@@ -73,6 +83,7 @@
             }
           },
           "metadata": {
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
             "created_at": "2021-10-18T16:41:55.363Z",
             "id": "wml_pipeline.403oct18",
             "modified_at": "2021-10-18T16:41:55.381Z",
@@ -81,6 +92,16 @@
             "project_id": "1efeb7f3-e903-44d1-87af-845861e944d9",
             "tags": [
               "dsx-project.1efeb7f3-e903-44d1-87af-845861e944d9"
+=======
+            "created_at": "2021-10-19T17:44:42.562Z",
+            "id": "wml_pipeline.kagglebotgit",
+            "modified_at": "2021-10-19T17:44:42.578Z",
+            "name": "kagglebot git",
+            "owner": "1000330999",
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
             ]
           },
           "system": {
@@ -89,12 +110,21 @@
         },
         "training_definition": {
           "metadata": {
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
             "created_at": "2021-10-18T16:41:55.962Z",
             "guid": "08928b9f-d84e-46b3-afd5-e93035636b17",
             "id": "08928b9f-d84e-46b3-afd5-e93035636b17",
             "project_id": "1efeb7f3-e903-44d1-87af-845861e944d9",
             "tags": [
               "dsx-project.1efeb7f3-e903-44d1-87af-845861e944d9"
+=======
+            "created_at": "2021-10-19T17:44:43.107Z",
+            "guid": "6a03fec2-4095-4abe-a441-f190c3176635",
+            "id": "6a03fec2-4095-4abe-a441-f190c3176635",
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
             ]
           },
           "entity": {
@@ -105,7 +135,11 @@
                   "node_id": "training"
                 }
               ],
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
               "id": "wml_pipeline.403oct18",
+=======
+              "id": "wml_pipeline.kagglebotgit",
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
               "nodes_parameters": [
                 {
                   "node_id": "training",
@@ -113,6 +147,7 @@
                 }
               ]
             },
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
             "project_id": "1efeb7f3-e903-44d1-87af-845861e944d9",
             "results_reference": {
               "location": {
@@ -121,18 +156,36 @@
                 "training": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data/08928b9f-d84e-46b3-afd5-e93035636b17",
                 "training_status": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data/08928b9f-d84e-46b3-afd5-e93035636b17/training-status.json",
                 "assets_path": "/projects/1efeb7f3-e903-44d1-87af-845861e944d9/assets/auto_ml/auto_ml.403oct18/wml_data/08928b9f-d84e-46b3-afd5-e93035636b17/assets"
+=======
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "results_reference": {
+              "location": {
+                "path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit/wml_data",
+                "notebooks_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit/wml_data/6a03fec2-4095-4abe-a441-f190c3176635/notebooks",
+                "training": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit/wml_data/6a03fec2-4095-4abe-a441-f190c3176635",
+                "training_status": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit/wml_data/6a03fec2-4095-4abe-a441-f190c3176635/training-status.json",
+                "assets_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit/wml_data/6a03fec2-4095-4abe-a441-f190c3176635/assets"
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
               },
               "type": "fs"
             },
             "tags": [
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
               "dsx-project.1efeb7f3-e903-44d1-87af-845861e944d9"
+=======
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
             ],
             "training_data_references": [
               {
                 "connection": {},
                 "id": "ghosts_train.csv",
                 "location": {
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
                   "href": "/userfs/v2/assets/data_asset.ghoststraincsv?project_id=1efeb7f3-e903-44d1-87af-845861e944d9",
+=======
+                  "href": "/userfs/v2/assets/data_asset.ghoststraincsv?project_id=2de43c95-2a16-4386-98ee-33e9980ba1ab",
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
                   "id": "data_asset.ghoststraincsv",
                   "userfs": "true"
                 },
@@ -150,11 +203,19 @@
     {
       "asset_type": "auto_ml",
       "name": "config",
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
       "description": "config attachment for auto_ml asset auto_ml.403oct18",
       "object_key": "auto_ml/auto_ml.403oct18/attachments/config_auto_ml.403oct18",
       "object_key_is_read_only": true,
       "created_at": "2021-10-18T15:57:04Z",
       "id": "4d980642-b1b5-483d-b28a-1fef2ebd4798",
+=======
+      "description": "config attachment for auto_ml asset auto_ml.kagglebotgit",
+      "object_key": "auto_ml/auto_ml.kagglebotgit/attachments/config_auto_ml.kagglebotgit",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-19T17:44:05Z",
+      "id": "db7c87ec-b9c8-46f5-8fd0-f79925cdbdf4",
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
       "is_managed": false,
       "is_referenced": true,
       "is_remote": false
@@ -162,11 +223,19 @@
     {
       "asset_type": "auto_ml",
       "name": "referenced",
+<<<<<<< Updated upstream:assets/.METADATA/auto_ml.403oct18.json
       "description": "referenced attachment for auto_ml asset auto_ml.403oct18",
       "object_key": "auto_ml/auto_ml.403oct18/attachments/referenced_auto_ml.403oct18",
       "object_key_is_read_only": true,
       "created_at": "2021-10-18T15:57:04Z",
       "id": "b95c48da-7ffa-42b2-8a90-3d6a93ee1d80",
+=======
+      "description": "referenced attachment for auto_ml asset auto_ml.kagglebotgit",
+      "object_key": "auto_ml/auto_ml.kagglebotgit/attachments/referenced_auto_ml.kagglebotgit",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-19T17:44:06Z",
+      "id": "81f9b9a8-4c1d-4f12-a9bd-aba4ef4976a4",
+>>>>>>> Stashed changes:assets/.METADATA/auto_ml.kagglebotgit.json
       "is_managed": false,
       "is_referenced": true,
       "is_remote": false

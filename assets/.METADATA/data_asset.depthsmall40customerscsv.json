@@ -4,8 +4,13 @@
     "asset_type": "data_asset",
     "origin_country": "us",
     "asset_category": "USER",
+<<<<<<< Updated upstream
     "created_at": "2021-10-18T17:28:17Z",
     "created": 1634578097676,
+=======
+    "created_at": "2021-10-18T20:27:45Z",
+    "created": 1634588865916,
+>>>>>>> Stashed changes
     "asset_id": "data_asset.depthsmall40customerscsv",
     "asset_attributes": [
       "data_asset"
@@ -24,8 +29,13 @@
       "mime": "text/csv",
       "object_key": "data_asset/depthsmall_40_customers.csv",
       "object_key_is_read_only": true,
+<<<<<<< Updated upstream
       "created_at": "2021-10-18T17:28:18Z",
       "id": "d53497c7-590f-47f5-98fd-f4c324ed6973",
+=======
+      "created_at": "2021-10-18T20:27:46Z",
+      "id": "3e52332b-2ba7-4ad8-b1c7-fe80c249381d",
+>>>>>>> Stashed changes
       "is_managed": false,
       "is_referenced": true,
       "is_remote": false

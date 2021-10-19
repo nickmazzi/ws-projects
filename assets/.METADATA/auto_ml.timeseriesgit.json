@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "name": "time series git",
+    "asset_type": "auto_ml",
+    "origin_country": "us",
+    "tags": [],
+    "asset_category": "USER",
+    "created_at": "2021-10-19T17:32:59Z",
+    "created": 1634664779454,
+    "asset_id": "auto_ml.timeseriesgit",
+    "asset_attributes": [
+      "auto_ml"
+    ]
+  },
+  "entity": {
+    "auto_ml": {
+      "wml": {
+        "service_instance_id": "99999999-9999-9999-9999-999999999999",
+        "plan_version": 2,
+        "pipeline": {
+          "entity": {
+            "document": {
+              "doc_type": "pipeline",
+              "pipelines": [
+                {
+                  "id": "autoai",
+                  "nodes": [
+                    {
+                      "id": "autoai-ts",
+                      "op": "kube",
+                      "parameters": {
+                        "output_logs": true,
+                        "del_on_close": true,
+                        "optimization": {
+                          "gap_len": 0,
+                          "holdout_param": 20,
+                          "imputation_threshold": null,
+                          "imputer_fill_type": null,
+                          "imputer_fill_value": null,
+                          "imputer_list": null,
+                          "learning_type": "timeseries",
+                          "lookback_window": -1,
+                          "max_num_daub_ensembles": 3,
+                          "num_backtest": 4,
+                          "output_format": "json",
+                          "prediction_horizon": 1,
+                          "target_columns": [
+                            2
+                          ],
+                          "timestamp_column": 1,
+                          "use_imputation": null
+                        },
+                        "n_parallel_data_connections": 15,
+                        "one_vs_all_file": true
+                      },
+                      "runtime_ref": "autoai",
+                      "type": "execution_node"
+                    }
+                  ],
+                  "runtime_ref": "hybrid"
+                }
+              ],
+              "primary_pipeline": "autoai",
+              "runtimes": [
+                {
+                  "app_data": {
+                    "wml_data": {
+                      "hardware_spec": {
+                        "id": "c076e82c-b2a7-4d20-9c0f-1f0c2fdf5a24",
+                        "name": "M"
+                      }
+                    }
+                  },
+                  "id": "autoai",
+                  "name": "auto_ai.ts"
+                }
+              ],
+              "version": "2.0"
+            }
+          },
+          "metadata": {
+            "created_at": "2021-10-19T17:37:12.761Z",
+            "id": "wml_pipeline.timeseriesgit",
+            "modified_at": "2021-10-19T17:37:12.778Z",
+            "name": "time series git",
+            "owner": "1000330999",
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+            ]
+          },
+          "system": {
+            "warnings": []
+          }
+        },
+        "training_definition": {
+          "metadata": {
+            "created_at": "2021-10-19T17:37:13.374Z",
+            "guid": "dabb7e86-457b-4743-bff3-a76d91611f93",
+            "id": "dabb7e86-457b-4743-bff3-a76d91611f93",
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+            ]
+          },
+          "entity": {
+            "pipeline": {
+              "data_bindings": [
+                {
+                  "data_reference_name": "training_input_data",
+                  "node_id": "training"
+                }
+              ],
+              "id": "wml_pipeline.timeseriesgit",
+              "nodes_parameters": [
+                {
+                  "node_id": "training",
+                  "parameters": {}
+                }
+              ]
+            },
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "results_reference": {
+              "location": {
+                "path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data",
+                "notebooks_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/notebooks",
+                "training": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93",
+                "training_status": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/training-status.json",
+                "assets_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.timeseriesgit/wml_data/dabb7e86-457b-4743-bff3-a76d91611f93/assets"
+              },
+              "type": "fs"
+            },
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+            ],
+            "training_data_references": [
+              {
+                "connection": {},
+                "id": "AirPassengers.csv",
+                "location": {
+                  "href": "/userfs/v2/assets/data_asset.AirPassengerscsv?project_id=2de43c95-2a16-4386-98ee-33e9980ba1ab",
+                  "id": "data_asset.AirPassengerscsv",
+                  "userfs": "true"
+                },
+                "type": "data_asset"
+              }
+            ]
+          }
+        }
+      },
+      "status": "completed",
+      "learning_type": "timeseries"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "auto_ml",
+      "name": "config",
+      "description": "config attachment for auto_ml asset auto_ml.timeseriesgit",
+      "object_key": "auto_ml/auto_ml.timeseriesgit/attachments/config_auto_ml.timeseriesgit",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-19T17:33:00Z",
+      "id": "e3df0a26-66eb-45d6-96d8-28ab7272d233",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    },
+    {
+      "asset_type": "auto_ml",
+      "name": "referenced",
+      "description": "referenced attachment for auto_ml asset auto_ml.timeseriesgit",
+      "object_key": "auto_ml/auto_ml.timeseriesgit/attachments/referenced_auto_ml.timeseriesgit",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-19T17:33:01Z",
+      "id": "4e02f4b0-f356-4492-b4c9-9d3ca107af89",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}

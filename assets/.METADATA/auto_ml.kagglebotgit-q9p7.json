@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "name": "kagglebot git",
+    "asset_type": "auto_ml",
+    "origin_country": "us",
+    "tags": [],
+    "asset_category": "USER",
+    "created_at": "2021-10-19T18:01:35Z",
+    "created": 1634666495655,
+    "asset_id": "auto_ml.kagglebotgit-q9p7",
+    "asset_attributes": [
+      "auto_ml"
+    ]
+  },
+  "entity": {
+    "auto_ml": {
+      "wml": {
+        "service_instance_id": "99999999-9999-9999-9999-999999999999",
+        "plan_version": 2
+      },
+      "status": "untrained",
+      "learning_type": ""
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "auto_ml",
+      "name": "config",
+      "description": "config attachment for auto_ml asset auto_ml.kagglebotgit-q9p7",
+      "object_key": "auto_ml/auto_ml.kagglebotgit-q9p7/attachments/config_auto_ml.kagglebotgit-q9p7",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-19T18:01:36Z",
+      "id": "e4e151a1-1d16-420c-9831-5cd342b7525b",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    },
+    {
+      "asset_type": "auto_ml",
+      "name": "referenced",
+      "description": "referenced attachment for auto_ml asset auto_ml.kagglebotgit-q9p7",
+      "object_key": "auto_ml/auto_ml.kagglebotgit-q9p7/attachments/referenced_auto_ml.kagglebotgit-q9p7",
+      "object_key_is_read_only": true,
+      "created_at": "2021-10-19T18:01:37Z",
+      "id": "4a998b5d-ebed-4787-ad43-23a3d4dbda44",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}
