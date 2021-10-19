@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "name": "fl tensorflow2",
+    "tags": [],
+    "asset_type": "wml_model",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2021-10-19T18:03:41Z",
+    "created": 1634666621502,
+    "asset_id": "wml_model.fltensorflow2",
+    "asset_attributes": [
+      "wml_model"
+    ]
+  },
+  "entity": {
+    "wml_model": {
+      "ml_version": "4.0.2",
+      "tags": [],
+      "software_spec": {
+        "base_id": "ab9e1b80-f2ce-592c-a7d2-4f2344f77194"
+      },
+      "type": "tensorflow_2.1",
+      "custom": {
+        "untrained": true
+      }
+    }
+  },
+  "attachments": [
+    {
+      "name": "native",
+      "asset_type": "wml_model",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2021-10-19T18:03:42Z",
+      "id": "47d89bb2-eae1-460c-902c-d5a5014338c8",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}

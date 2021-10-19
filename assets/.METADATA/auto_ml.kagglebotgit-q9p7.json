@@ -16,10 +16,134 @@
     "auto_ml": {
       "wml": {
         "service_instance_id": "99999999-9999-9999-9999-999999999999",
-        "plan_version": 2
+        "plan_version": 2,
+        "pipeline": {
+          "entity": {
+            "document": {
+              "doc_type": "pipeline",
+              "pipelines": [
+                {
+                  "id": "autoai",
+                  "nodes": [
+                    {
+                      "id": "automl",
+                      "op": "kube",
+                      "parameters": {
+                        "output_logs": true,
+                        "input_file_separator": ",",
+                        "stage_flag": true,
+                        "optimization": {
+                          "compute_pipeline_notebooks_flag": true,
+                          "cv_num_folds": 3,
+                          "daub_adaptive_subsampling_max_mem_usage": 9000000000,
+                          "holdout_param": 0.1,
+                          "label": "bone_length",
+                          "learning_type": "regression",
+                          "max_num_daub_ensembles": 2,
+                          "run_cognito_flag": true,
+                          "scorer_for_ranking": "neg_root_mean_squared_error",
+                          "text_columns": null
+                        },
+                        "n_parallel_data_connections": 15,
+                        "one_vs_all_file": true
+                      },
+                      "runtime_ref": "autoai",
+                      "type": "execution_node"
+                    }
+                  ],
+                  "runtime_ref": "hybrid"
+                }
+              ],
+              "primary_pipeline": "autoai",
+              "runtimes": [
+                {
+                  "app_data": {
+                    "wml_data": {
+                      "hardware_spec": {
+                        "id": "c076e82c-b2a7-4d20-9c0f-1f0c2fdf5a24",
+                        "name": "M"
+                      }
+                    }
+                  },
+                  "id": "autoai",
+                  "name": "auto_ai.kb"
+                }
+              ],
+              "version": "2.0"
+            }
+          },
+          "metadata": {
+            "created_at": "2021-10-19T18:02:17.430Z",
+            "id": "wml_pipeline.kagglebotgit-9AE2",
+            "modified_at": "2021-10-19T18:02:17.447Z",
+            "name": "kagglebot git",
+            "owner": "1000330999",
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+            ]
+          },
+          "system": {
+            "warnings": []
+          }
+        },
+        "training_definition": {
+          "metadata": {
+            "created_at": "2021-10-19T18:02:17.882Z",
+            "guid": "8f9be11b-076c-4865-8696-cc2e2357b74b",
+            "id": "8f9be11b-076c-4865-8696-cc2e2357b74b",
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+            ]
+          },
+          "entity": {
+            "pipeline": {
+              "data_bindings": [
+                {
+                  "data_reference_name": "training_input_data",
+                  "node_id": "training"
+                }
+              ],
+              "id": "wml_pipeline.kagglebotgit-9AE2",
+              "nodes_parameters": [
+                {
+                  "node_id": "training",
+                  "parameters": {}
+                }
+              ]
+            },
+            "project_id": "2de43c95-2a16-4386-98ee-33e9980ba1ab",
+            "results_reference": {
+              "location": {
+                "path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit-q9p7/wml_data",
+                "notebooks_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit-q9p7/wml_data/8f9be11b-076c-4865-8696-cc2e2357b74b/notebooks",
+                "training": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit-q9p7/wml_data/8f9be11b-076c-4865-8696-cc2e2357b74b",
+                "training_status": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit-q9p7/wml_data/8f9be11b-076c-4865-8696-cc2e2357b74b/training-status.json",
+                "assets_path": "/projects/2de43c95-2a16-4386-98ee-33e9980ba1ab/assets/auto_ml/auto_ml.kagglebotgit-q9p7/wml_data/8f9be11b-076c-4865-8696-cc2e2357b74b/assets"
+              },
+              "type": "fs"
+            },
+            "tags": [
+              "dsx-project.2de43c95-2a16-4386-98ee-33e9980ba1ab"
+            ],
+            "training_data_references": [
+              {
+                "connection": {},
+                "id": "ghosts_train.csv",
+                "location": {
+                  "href": "/userfs/v2/assets/data_asset.ghoststraincsv?project_id=2de43c95-2a16-4386-98ee-33e9980ba1ab",
+                  "id": "data_asset.ghoststraincsv",
+                  "userfs": "true"
+                },
+                "type": "data_asset"
+              }
+            ]
+          }
+        }
       },
-      "status": "untrained",
-      "learning_type": ""
+      "status": "completed",
+      "learning_type": "regression"
     }
   },
   "attachments": [
