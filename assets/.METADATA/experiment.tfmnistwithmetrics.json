@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "tf-mnist with metrics",
+    "description": "",
+    "asset_type": "experiment",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2022-05-06T21:59:45Z",
+    "created": 1651874385145,
+    "asset_id": "experiment.tfmnistwithmetrics",
+    "asset_attributes": [
+      "experiment"
+    ]
+  },
+  "entity": {
+    "experiment": {
+      "status": "completed",
+      "configuration": {},
+      "wml": {
+        "service_instance_id": "99999999-9999-9999-9999-999999999999",
+        "plan_version": 2
+      },
+      "experiment_guid": "wml_experiment.tfmnistwithmetrics"
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "experiment",
+      "name": "referenced",
+      "description": "referenced attachment for experiment asset experiment.tfmnistwithmetrics",
+      "object_key": "experiment/experiment.tfmnistwithmetrics/attachments/referenced_experiment.tfmnistwithmetrics",
+      "object_key_is_read_only": true,
+      "created_at": "2022-05-06T21:59:46Z",
+      "id": "3ba15269-6f99-467d-9560-dc1de0021e77",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}

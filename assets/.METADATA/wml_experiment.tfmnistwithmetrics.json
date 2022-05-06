@@ -1,0 +1,44 @@
+{
+  "entity": {
+    "wml_experiment": {
+      "training_references": [
+        {
+          "model_definition": {
+            "hardware_spec": {
+              "base_id": "f327bdf7-5634-43d8-b1e3-445afeaf18b9",
+              "name": "V100",
+              "num_nodes": 1
+            },
+            "id": "wml_model_definition.tensorflowwithmetrics21may62022",
+            "parameters": {
+              "description": "tensorflow with metrics 2.1 may 6 2022",
+              "name": "tensorflow with metrics 2.1 may 6 2022"
+            },
+            "software_spec": {
+              "base_id": "acd9c798-6974-5d2f-a657-ce06e986df4d",
+              "name": "tensorflow_rt22.1-py3.9"
+            }
+          }
+        }
+      ],
+      "model_definition_dependencies": [
+        "wml_model_definition.tensorflowwithmetrics21may62022"
+      ],
+      "ml_version": "4.0.1"
+    }
+  },
+  "metadata": {
+    "name": "tf-mnist with metrics",
+    "description": "",
+    "asset_type": "wml_experiment",
+    "asset_category": "USER",
+    "origin_country": "US",
+    "created_at": "2022-05-06T21:59:45Z",
+    "created": 1651874385560,
+    "asset_id": "wml_experiment.tfmnistwithmetrics",
+    "asset_attributes": [
+      "wml_experiment"
+    ]
+  },
+  "attachments": []
+}
