@@ -1,0 +1,102 @@
+{
+  "attachments": [
+    {
+      "asset_type": "wml_model",
+      "name": "prompt_tune.zip",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2024-04-29T18:32:07Z",
+      "id": "570c9a46-c50a-4b9f-8f3f-edb2df17447a",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true,
+      "url1": "/v2/asset_files/wml_model/570c9a46-c50a-4b9f-8f3f-edb2df17447a?project_id=1b06ff36-c009-45cb-90dd-7ef3117bef87&userfs=true&signature=gcm-a1DSRj76%2B93TUr0rCttC1Q%3D%3D%3B2B%2FaLGMMxINk24SN9bBQLQ%3D%3D%3AG9HieQUl0VsWi3CTTEJgbq5ALnvA3optRVECj%2Fli0THPThxNqtl%2BOJF%2Fb%2B0lpiIrB6Lb2%2FYQRY1SeWblh90l%2F3aKGVnsLFKOMfOqHyt9QlIkgutKeUMqgSB5DyUvqDjz0X4JhxzVY9kHFsAp0djZcbIQHVUca84%2BBAqj8Ou%2FfrGqF4u4nYaYpfxzrcMSw4CXmtT3%2F5EIjoVfiI6ndpK9sz%2BRuBSEy1En1m7zpriqbVBD0Itvf%2BdElI9Cgk8xP2o0i%2BF0XxgASQjNjg%3D%3D"
+    }
+  ],
+  "entity": {
+    "wml_model": {
+      "data_asset_dependencies": [
+        "data_asset.trainrtejson"
+      ],
+      "training": {
+        "base_model": {
+          "model_id": "google/flan-t5-xl"
+        },
+        "id": "9f3111cb-7f1b-432e-b0da-64c6fac8f8d2",
+        "parameters": {
+          "accumulate_steps": 16,
+          "batch_size": 16,
+          "init_method": "random",
+          "learning_rate": 0.3,
+          "max_input_tokens": 256,
+          "max_output_tokens": 128,
+          "num_epochs": 20,
+          "num_virtual_tokens": 100,
+          "tuning_type": "prompt_tuning"
+        },
+        "task_id": "summarization",
+        "verbalizer": "Input: {{input}} Output:"
+      },
+      "training_id": "9f3111cb-7f1b-432e-b0da-64c6fac8f8d2",
+      "metrics": [
+        {
+          "context": {
+            "prompt_tuning": {
+              "metrics_location": "/projects/1b06ff36-c009-45cb-90dd-7ef3117bef87/assets/wx_prompt_tune/wx_prompt_tune.gitapr292/wml_data/9f3111cb-7f1b-432e-b0da-64c6fac8f8d2/assets/9f3111cb-7f1b-432e-b0da-64c6fac8f8d2/resources/training_logs.jsonl"
+            }
+          },
+          "timestamp": "2024-04-29T18:32:05.783Z"
+        }
+      ],
+      "ml_version": "4.0.19",
+      "type": "prompt_tune_1.0",
+      "content_location": {
+        "contents": [
+          {
+            "content_format": "native",
+            "file_name": "prompt_tune.zip",
+            "location": "/projects/1b06ff36-c009-45cb-90dd-7ef3117bef87/assets/wx_prompt_tune/wx_prompt_tune.gitapr292/wml_data/9f3111cb-7f1b-432e-b0da-64c6fac8f8d2/assets/9f3111cb-7f1b-432e-b0da-64c6fac8f8d2/resources/prompt_tune.zip"
+          }
+        ],
+        "location": {
+          "assets_path": "/projects/1b06ff36-c009-45cb-90dd-7ef3117bef87/assets/wx_prompt_tune/wx_prompt_tune.gitapr292/wml_data/9f3111cb-7f1b-432e-b0da-64c6fac8f8d2/assets",
+          "path": "/projects/1b06ff36-c009-45cb-90dd-7ef3117bef87/assets/wx_prompt_tune/wx_prompt_tune.gitapr292/wml_data",
+          "training": "/projects/1b06ff36-c009-45cb-90dd-7ef3117bef87/assets/wx_prompt_tune/wx_prompt_tune.gitapr292/wml_data/9f3111cb-7f1b-432e-b0da-64c6fac8f8d2",
+          "training_status": "/projects/1b06ff36-c009-45cb-90dd-7ef3117bef87/assets/wx_prompt_tune/wx_prompt_tune.gitapr292/wml_data/9f3111cb-7f1b-432e-b0da-64c6fac8f8d2/training-status.json"
+        },
+        "type": "fs"
+      },
+      "training_data_references": [
+        {
+          "connection": {},
+          "id": "train_rte.json",
+          "location": {
+            "href": "/userfs/v2/assets/data_asset.trainrtejson?project_id=1b06ff36-c009-45cb-90dd-7ef3117bef87",
+            "id": "data_asset.trainrtejson",
+            "userfs": "true"
+          },
+          "type": "data_asset"
+        }
+      ],
+      "software_spec": {
+        "name": "watsonx-textgen-fm-1.0"
+      },
+      "content_import_state": "completed"
+    }
+  },
+  "metadata": {
+    "name": "git apr 29 - 2 (1)",
+    "asset_type": "wml_model",
+    "asset_category": "USER",
+    "resource_key": "e60035a2-a840-4a26-a159-afb92ed25c0d",
+    "origin_country": "US",
+    "created_at": "2024-04-29T18:32:07Z",
+    "created": 1714415527352,
+    "asset_id": "wml_model.gitapr2921",
+    "asset_attributes": [
+      "wml_model"
+    ]
+  }
+}
